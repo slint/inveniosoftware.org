@@ -1,10 +1,15 @@
 {% extends 'page.html' %}
 {% set active_page = "gettingstarted" %}
 
-{% block page_title %}Getting started with Invenio{% endblock %}
+{% block page_title %}{{ this.title }}{% endblock %}
 {% block page_subtitle %}Installation and first steps{% endblock %}
 {% block page_body %}
-  <section class="install-section section-content-white-bg">
+  <section class="section-content-white-bg">
+    <div class="container">
+      <article>
+        {{ this.body }}
+      </article>
+    </div>
     <div class="container">
       <span class="section-title-light-bg">Installation</span>
       <div class="row">
@@ -35,6 +40,7 @@
       </div>
     </div>
   </section>
+
   <section class="documentation-section section-content-light-bg">
     <div class="container">
       <span class="section-title-light-bg">Documentation</span>

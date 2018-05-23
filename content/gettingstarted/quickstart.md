@@ -1,9 +1,3 @@
-_model: gettingstarted
----
-title: Getting Started with Invenio
----
-body:
-
 ## Prerequisites
 
 To be able to develop and run Invenio you will need the following
@@ -250,7 +244,7 @@ for the instance. One of them is
 updating MANIFEST.in &lt;manifest-in&gt;. The other one is adding the
 datamodel's configuration in our instance:
 
-```python
+``` {.sourceCode .python}
 # foo_library/config.py
 ...
 from foo_datamodel.config import FOO_DATAMODEL_RECORDS_REST_ENDPOINTS
@@ -368,4 +362,3 @@ $ curl -k --header "Content-Type: application/json" \
 ```
 
 You can also search via the UI page at <https://localhost:5000/search>.
-
